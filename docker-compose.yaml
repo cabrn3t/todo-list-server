@@ -1,0 +1,22 @@
+services:
+  todo-list-server:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: abc321
+      POSTGRES_DB: todolist
+    ports:
+      - "5436:5432"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+
+     
