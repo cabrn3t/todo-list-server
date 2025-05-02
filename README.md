@@ -36,7 +36,7 @@ CREATE TABLE tasks (
 
 ## 1. Создание задачи
 
-POST /tasks
+POST /tasks  
 Создает новую задачу.
 
 ```json
@@ -49,12 +49,12 @@ POST /tasks
 
 ## 2. Получение списка всех задач
 
-GET /tasks
+GET /tasks  
 Возвращает список всех задач.
 
 ## 3. Обновление задачи
 
-PUT /tasks/:id
+PUT /tasks/:id  
 Обновляет задачу с указанным id.
 
 ### Параметры URL
