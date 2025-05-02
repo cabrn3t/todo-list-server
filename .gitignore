@@ -1,1 +1,5 @@
 .vscode/
+config.yaml
+postgres_data/
+*.exe
+*.exe~
